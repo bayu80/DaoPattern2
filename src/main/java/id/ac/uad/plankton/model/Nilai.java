@@ -5,19 +5,25 @@ package id.ac.uad.plankton.model;
  */
 public class Nilai {
     private int id;
-    private int kodeKuliah;
-    private String namaKuliah;
+    private Student student;
+    private MataKuliah mataKuliah;
     private String nilai;
 
-    public Nilai(){
+    public Nilai() {
 
     }
 
-    public Nilai(int id, int kodeKuliah, String namaKuliah, String nilai) {
+    public Nilai(int id, Student student, MataKuliah mataKuliah, String nilai) {
         this.id = id;
-        this.kodeKuliah = kodeKuliah;
-        this.namaKuliah = namaKuliah;
+        this.student = student;
+        this.mataKuliah = mataKuliah;
         this.nilai = nilai;
+    }
+
+    public Nilai(int id, Student student, MataKuliah mataKuliah ) {
+        this.id = id;
+        this.getStudent().getId();
+        this.getMataKuliah().getKode();
     }
 
     public int getId() {
@@ -28,20 +34,20 @@ public class Nilai {
         this.id = id;
     }
 
-    public int getKodeKuliah() {
-        return kodeKuliah;
+    public Student getStudent() {
+        return student;
     }
 
-    public void setKodeKuliah(int kodeKuliah) {
-        this.kodeKuliah = kodeKuliah;
+    public void setStudent(Student student) {
+        this.student = student;
     }
 
-    public String getNamaKuliah() {
-        return namaKuliah;
+    public MataKuliah getMataKuliah() {
+        return mataKuliah;
     }
 
-    public void setNamaKuliah(String namaKuliah) {
-        this.namaKuliah = namaKuliah;
+    public void setMataKuliah(MataKuliah mataKuliah) {
+        this.mataKuliah = mataKuliah;
     }
 
     public String getNilai() {

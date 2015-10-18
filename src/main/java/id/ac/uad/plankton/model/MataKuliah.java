@@ -5,34 +5,34 @@ package id.ac.uad.plankton.model;
  */
 public class MataKuliah {
 
-    private int kodeKuliah;
-    private String namaKuliah;
+    private int kode;
+    private String nama;
     private int sks;
 
     public MataKuliah(){
 
     }
 
-    public MataKuliah(int kodeKuliah, String namaKuliah, int sks) {
-        this.kodeKuliah = kodeKuliah;
-        this.namaKuliah = namaKuliah;
+    public MataKuliah(int kode, String nama, int sks) {
+        this.kode = kode;
+        this.nama = nama;
         this.sks = sks;
     }
 
-    public int getKodeKuliah() {
-        return kodeKuliah;
+    public int getKode() {
+        return kode;
     }
 
-    public void setKodeKuliah(int kodeKuliah) {
-        this.kodeKuliah = kodeKuliah;
+    public void setKode(int kode) {
+        this.kode = kode;
     }
 
-    public String getNamaKuliah() {
-        return namaKuliah;
+    public String getNama() {
+        return nama;
     }
 
-    public void setNamaKuliah(String namaKuliah) {
-        this.namaKuliah = namaKuliah;
+    public void setNama(String nama) {
+        this.nama = nama;
     }
 
     public int getSks() {

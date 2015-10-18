@@ -1,4 +1,3 @@
-
 package id.ac.uad.plankton.model;
 
 /**

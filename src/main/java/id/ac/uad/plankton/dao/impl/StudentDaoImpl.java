@@ -1,4 +1,3 @@
-
 package id.ac.uad.plankton.dao.impl;
 
 /**
@@ -56,7 +55,7 @@ public class StudentDaoImpl implements StudentDao {
 
         Student student = new Student();
         try {
-            PreparedStatement preparedStatement = connection.prepareStatement("SELECT nama,alamat FROM student WHERE id=?");
+            PreparedStatement preparedStatement = connection.prepareStatement("SELECT name FROM Student WHERE student_id=?");
             preparedStatement.setInt(1,id);
             ResultSet resultSet = preparedStatement.executeQuery();
             while(resultSet.next()){
